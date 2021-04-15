@@ -25,10 +25,11 @@ class HistoryComponent extends Component
         if (Auth::user()->level === 'admin' or Auth::user()->level === 'petugas')
         {
             $dataHistory=DB::table('pembayarans')
-            ->join('siswas', 'siswas.nisn', '=', 'pembayarans.nisn')
-            ->join('spps', 'spps.id', '=', 'pembayarans.id_spp')
-            ->join('kelas', 'kelas.id', '=', 'siswas.id_kelas')
-            ->get('pembayarans.*', 'spps.*', 'kelas.*', 'siswas.*', 'pembayarans.created_at');
+            ->join('siswas', 'siswas.nisn', 'pembayarans.nisn')
+            ->join('spps', 'spps.id', 'pembayarans.id_spp')
+            ->join('kelas', 'kelas.id', 'siswas.id_kelas')
+            ->select('pembayarans.*', 'spps.*', 'kelas.*', 'siswas.*', 'pembayarans.created_at')
+            ->get();
             return view('livewire.history-component', ['history'=>$dataHistory])->layout('layouts.base');
         }
         elseif (Auth::user()->level === 'siswa')
