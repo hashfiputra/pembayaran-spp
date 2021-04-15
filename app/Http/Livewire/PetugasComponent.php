@@ -31,7 +31,7 @@ class PetugasComponent extends Component
 
     public function render()
     {
-        $dataPetugas=DB::select('select * from users where level = "petugas"');
+        $dataPetugas=DB::select("select * from users where level = 'petugas'");
         return view('livewire.petugas-component', ['petugas' => $dataPetugas])->layout('layouts.base');
     }
 }
