@@ -28,7 +28,7 @@ class HistoryComponent extends Component
             ->join('siswas', 'siswas.nisn', '=', 'pembayarans.nisn')
             ->join('spps', 'spps.id', '=', 'pembayarans.id_spp')
             ->join('kelas', 'kelas.id', '=', 'siswas.id_kelas')
-            ->get(['pembayarans.*', 'spps.*', 'kelas.*', 'siswas.*', 'pembayarans.created_at']);
+            ->get('pembayarans.*', 'spps.*', 'kelas.*', 'siswas.*', 'pembayarans.created_at');
             return view('livewire.history-component', ['history'=>$dataHistory])->layout('layouts.base');
         }
         elseif (Auth::user()->level === 'siswa')

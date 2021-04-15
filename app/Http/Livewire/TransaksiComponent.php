@@ -17,9 +17,9 @@ class TransaksiComponent extends Component
     public function crSPP()
     { 
         $nisn=$this->nisn;
-        $sppsiswa=siswa::join('spps', 'siswas.id_spp', 'spps.id')
+        $sppsiswa=siswa::join('spps', 'siswas.id_spp', '=', 'spps.id')
             ->where('siswas.nisn', $nisn)
-            ->get(['siswas.*', 'spps.*'])
+            ->get('siswas.*','spps.*')
             ->first();
         $this->spp=$sppsiswa->nominal;
         $this->idSPP=$sppsiswa->id_spp;
