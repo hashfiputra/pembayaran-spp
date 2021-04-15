@@ -31,7 +31,7 @@ class SiswaUserComponent extends Component
 
     public function render()
     {
-        $dataSiswaUser=DB::select('select * from users where level = "siswa"');
+        $dataSiswaUser=DB::select("select * from users where level = 'siswa'");
         return view('livewire.siswa-user-component', ['siswaUser' => $dataSiswaUser])->layout('layouts.base');
     }
 }
