@@ -37,7 +37,8 @@ class authAdmin
                 'spp',
                 'transaksi',
                 'historyPembayaran',
-                'laporan'
+                'laporan',
+                'laporanPDF'
             ],
             'petugas'=>[
                 'home',

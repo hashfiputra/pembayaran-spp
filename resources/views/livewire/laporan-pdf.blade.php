@@ -6,24 +6,9 @@
                     <h3 class="card-title">Laporan Pembayaran</h3>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" wire:model='nisn' placeholder="Masukkan NISN">
-                        </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn btn-primary" wire:click='laporan'>
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-primary" wire:click='laporanPDF'>
-                                <i class="fas fa-download"></i>
-                            </button>
-                        </div>
-                    </div>
                     <div class="table-responsive">
                         <hr>
-                        <table class="table table-hover text-nowrap">
+                        <table class="table table-hover text-nowrap table-bordered">
                             <thead>
                                 <tr>
                                     <th>NISN</th>

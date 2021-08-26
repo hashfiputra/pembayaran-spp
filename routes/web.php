@@ -32,4 +32,5 @@ Route::middleware(['auth:sanctum', 'verified','authadmin'])->group(function () {
     Route::get('/transaksi',TransaksiComponent::class)->name('transaksi');
     Route::get('/historyPembayaran',HistoryComponent::class)->name('historyPembayaran');
     Route::get('/laporan',LaporanComponent::class)->name('laporan');
+    Route::get('/laporanPDF', [LaporanComponent::class, 'laporanPDF'])->name('laporanPDF');
 });
