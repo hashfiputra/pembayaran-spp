@@ -1,3 +1,12 @@
+## Screenshots
+<p align="center"><img src="https://github.com/hashfiputra/pembayaran-spp/blob/main/img/SS1.PNG" width="450px" height="auto"> <img src="https://github.com/hashfiputra/pembayaran-spp/blob/main/img/SS2.PNG" width="450px" height="auto"></p>
+<p align="center"><img src="https://github.com/hashfiputra/pembayaran-spp/blob/main/img/SS3.PNG" width="450px" height="auto"> <img src="https://github.com/hashfiputra/pembayaran-spp/blob/main/img/SS4.PNG" width="450px" height="auto"></p>
+
+## Tentang/About
+[ID] Tugas akhir sekolah saya, aplikasi pembayaran spp berbasis web. Framework menggunakan Laravel dan Livewire.
+
+[EN] My last school assessment, web-based app pay school fees. Using Laravel and Livewire as framework.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
